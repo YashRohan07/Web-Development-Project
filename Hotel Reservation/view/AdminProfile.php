@@ -1,5 +1,5 @@
 <?php
-require_once '..\model\adminDatabase.php';
+require_once '..\model\Database.php';
 
 // Establish database connection
 $con = dbConnect();
@@ -43,7 +43,7 @@ mysqli_close($con);
         </div>
         <div style="margin-top: 20px;">
             <?php
-            require_once '../model/adminDatabase.php';
+            require_once '../model/Database.php';
 
             // Connect to database using the function
             $con = dbConnect();

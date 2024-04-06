@@ -1,5 +1,5 @@
 <?php
-require_once('adminDatabase.php');
+require_once('Database.php');
  
 function login($username, $password){
     $con = dbConnect();

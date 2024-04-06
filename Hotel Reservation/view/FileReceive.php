@@ -4,7 +4,7 @@ $tmp_name = $_FILES['myfile']['tmp_name'];
  
 if(move_uploaded_file($tmp_name,$name))
 {
-    echo"file uploaded";
+    echo"Successfully Uploaded";
 }
 else
 {

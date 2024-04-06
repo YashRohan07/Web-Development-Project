@@ -13,6 +13,7 @@ if($username == "" || $password == ""){
     if($status){
         $_SESSION['username'] = $username;
         $_SESSION['flag'] = true;
+       // setcookie('flag','true',time()+86400, '/');
         header('location: ../view/AdminDashboard.php');
         exit();
     } else {

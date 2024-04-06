@@ -3,28 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Password Change</title>
+<title>Password Change</title>   
 
-   
-   <style>
-        
+<style>
+    table {
+       border-collapse: collapse;
+    }
 
-        table {
-            border-collapse: collapse;
+    th, td {
+        background-color: #59D5E0;
+        border: 1px solid #59D5E0;
+        padding: 5px;
+    }
+
+    fieldset{
+        width: 400px;
             
-        }
-        th, td {
-            background-color: #59D5E0;
-            border: 1px solid #59D5E0;
-            padding: 5px;
-        }
-
-        fieldset{
-            width: 400px;
-            
-        }
+    }
     </style>
-   
    
 
 </head>
@@ -32,7 +28,7 @@
 <center>    
 <fieldset>
 <h2>Password Change</h2>
-<form method="post" action="../model/ChangePassword.php">
+<form method="post" action="../controller/PassChanger.php">
     <table>
         <tr>
             <td><label for="code">Enter The Code:</label></td>

@@ -35,16 +35,16 @@
 </head>
 <body>
     <center>
-        <fieldset>
-            <h1>Welcome To Admin Panel<br><?php echo $_SESSION['username']; ?></h1>
-            <table>
+    <fieldset>
+    <h1>Welcome To Admin Panel<br><?php echo $_SESSION['username']; ?></h1>
+    <table>
     <tr>
-        <td><form action="../crud/StaffDisplay.php"><button type="submit">Manage Staffs</button></form></td>
-        <td><form action="../crud/UserDisplay.php"><button type="submit">Manage Users</button></form></td>
+        <td><form action="../view/StaffDisplay.php"><button type="submit">Manage Staffs</button></form></td>
+        <td><form action="../view/UserDisplay.php"><button type="submit">Manage Users</button></form></td>
     </tr>
     <tr>
-        <td><form action="../crud/RoomDisplay.php"><button type="submit">Manage Booking</button></form></td>
-        <td><form action="../crud/ServiceDisplay.php"><button type="submit">Manage Services</button></form></td>
+        <td><form action="../view/RoomDisplay.php"><button type="submit">Manage Booking</button></form></td>
+        <td><form action="../view/ServiceDisplay.php"><button type="submit">Manage Services</button></form></td>
     </tr>
     <tr>
         <td><form action="AdminProfile.php"><button type="submit">Profile</button></form></td>
@@ -54,9 +54,9 @@
         <td><form action="FileUpload.php"><button type="submit">Upload Files</button></form></td>
         <td><form action="AdminLogin.php"><button type="submit">Logout</button></form></td>
     </tr>
-</table>
+    </table>
 
-        </fieldset>
-    </center>
+    </fieldset>
+   </center>
 </body>
 </html>

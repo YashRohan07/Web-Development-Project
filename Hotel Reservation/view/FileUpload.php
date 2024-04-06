@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Files</title>
     <style>
-        
-        fieldset{
-            background-color: #59D5E0;
-            width: 100px;
+      
+        fieldset {
+           width: 400px;
         }
-        </style>
+        
+    </style>
 </head>
-<body style="text-align: center;">
+<body>
     <center>
-    <fieldset>
-    <h2>Upload Files</h2>
-    
-    <form method="POST" action="FileReceive.php" enctype="multipart/form-data">
-        <label for="myfile">Select a file:</label><br>
-        <input type="file" id="myfile" name="myfile" style="margin-bottom: 10px;"><br>
-        <input type="submit" name="upload" value="Upload File">
-    </form>
-</fieldset>
+        <fieldset>
+            <h2>Upload Files</h2>
+            <form method="POST" action="FileReceive.php" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <th><label for="myfile">Select a file:</label></th> 
+                        <td><input type="file" id="myfile" name="myfile"></td>
+                    </tr>
+                    <tr>
+                       <td> </td>
+                        <td style="text-align: center;">
+                            <input type="submit" name="upload" value="Upload File">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
     </center>
 </body>
 </html>
