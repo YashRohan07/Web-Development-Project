@@ -86,4 +86,35 @@ function userSearch($search_id){
     }
 }
 
+
+function changePassword($id, $current_password, $new_password, $confirm_new_password){
+    $con = dbConnect();
+
+    // Retrieve user data
+    $sql = "SELECT * FROM data WHERE id='$id'";
+    $result = mysqli_query($con, $sql);
+
+    if(mysqli_num_rows($result) == 1) {
+        $row = mysqli_fetch_assoc($result);
+
+        if ($current_password == $row['password']) {
+            if ($new_password == $confirm_new_password) {
+                // Update password
+                $update_sql = "UPDATE data SET password='$new_password' WHERE id='$id'";
+                if(mysqli_query($con, $update_sql)) {
+                    return true; // Password updated successfully
+                } else {
+                    return false; // Failed to update password
+                }
+            } else {
+                return "New passwords do not match!";
+            }
+        } else {
+            return "Current password is incorrect!";
+        }
+    } else {
+        return "User not found!";
+    }
+}
+
 ?>
