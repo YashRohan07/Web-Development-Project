@@ -1,5 +1,5 @@
 <?php
-require_once('../model/database.php');
+require_once('../model/model.php');
 session_start();
 
 if(isset($_POST['submit'])){
@@ -10,33 +10,16 @@ if(isset($_POST['submit'])){
     // Retrieve the user's ID from the session
     $id = $_SESSION['id'];
 
-    $conn = dbConnect(); 
+    // Call the changePassword function
+    $change_result = changePassword($id, $current_password, $new_password, $confirm_new_password);
 
-    // Modify the query to fetch the data for the current user
-    $query = "SELECT * FROM data WHERE id='$id'";
-    $result = mysqli_query($conn, $query);
-
-    if (mysqli_num_rows($result) == 1) {
-        $row = mysqli_fetch_assoc($result);
-
-        if ($current_password == $row['password']) {
-            if ($new_password == $confirm_new_password) {
-                // Update the user's password
-                mysqli_query($conn, "UPDATE data SET password='$new_password' WHERE id='$id'");
-                
-                // Redirect to the login page
-                header('location:../view/Login.php');
-                exit();
-            } else {
-                echo "New passwords do not match!";
-            }
-        } else {
-            echo "Current password is incorrect!";
-        }
+    if($change_result === true) {
+        // Password changed successfully, redirect to login page
+        header('location:../view/Login.php');
+        exit();
     } else {
-        echo "User not found!";
+        // Password change failed, display error message
+        echo $change_result;
     }
-
-    mysqli_close($conn);
 }
 ?>
