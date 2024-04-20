@@ -1,0 +1,24 @@
+body {
+    background-color: cadetblue;
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    background-color: #59D5E0;
+    width: 50%; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: none; 
+    border-radius: 10px; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px; 
+}

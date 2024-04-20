@@ -8,21 +8,9 @@ include '..\model\serviceModel.php';
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Service Management</title>
-<style>
-    fieldset{
-        background-color: #59D5E0;
-        width: 60%;
-    }
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-    th, td {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-</style>
+<link rel="stylesheet" href="../asset/ServiceDisplay.css"/>
+   
+
 </head>
 <body>
 <center>

@@ -25,12 +25,8 @@ if(isset($_POST['submit'])) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Staff Update Form</title>
-<style>
-  fieldset{
-        background-color: #59D5E0;
-        width: 40%;
-    }
-</style>
+<link rel="stylesheet" href="../asset/StaffUpdate.css"/>
+   
 </head>
 <body>
 

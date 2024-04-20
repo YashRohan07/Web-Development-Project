@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Files</title>
-    <style>
-      
-        fieldset {
-           width: 400px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../asset/FileUpload.css"/>
 </head>
 <body>
     <center>
@@ -20,12 +14,12 @@
                 <table>
                     <tr>
                         <th><label for="myfile">Select a file:</label></th> 
-                        <td><input type="file" id="myfile" name="myfile"></td>
+                        <td><input type="file" id="myfile" name="myfile" class="choose-file-button"></td>
                     </tr>
                     <tr>
-                       <td> </td>
+                        <td></td>
                         <td style="text-align: center;">
-                            <input type="submit" name="upload" value="Upload File">
+                            <input type="submit" name="upload" value="Upload File" class="upload-button">
                         </td>
                     </tr>
                 </table>

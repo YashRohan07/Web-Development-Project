@@ -20,22 +20,9 @@ if(isset($_POST['submit'])){
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Room Management</title>
-<style>
-         fieldset{
-        background-color: #59D5E0;
-        width: 40%;
-    }
+<link rel="stylesheet" href="../asset/RoomCreate.css"/>
+   
 
-        table {
-            border-collapse: collapse;
-            border: 1px solid #ddd;
-        }
-        th, td {
-            background-color: #59D5E0;
-            border: 1px solid #ddd;
-            padding: 5px;
-        }
-</style>
 </head>
 <body>
 

@@ -1,0 +1,78 @@
+body {
+    background-image: url('../view/DashboardPhoto.webp');
+    background-size: cover; 
+    margin: 0; /* Remove default body margin */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px;
+    background-color: #59D5E0; /* Header background color */
+    color: black;
+   
+  }
+  
+  .header h1 {
+    margin: 0; /* Remove default top margin from heading */
+  }
+
+  /* CSS for home button */
+.home-button {
+    font-size: 20px;
+    width: 90px; /* Adjust width as needed */
+    height: 50px;
+    
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #3498db; /* Change background color */
+    color: #fff; /* Change text color */
+  }
+  
+  /* CSS for logout button */
+  .logout-button {
+    font-size: 20px;
+    width: 90px; /* Adjust width as needed */
+    height: 50px;
+  
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #9b59b6; /* Change background color */
+    color: #fff; /* Change text color */
+  }
+  
+  /* Hover effect for both buttons */
+  .home-button:hover,
+  .logout-button:hover {
+    background-color: #34495e; /* Change background color on hover */
+  }
+  
+  
+  fieldset {
+    width: 25%;
+    height: 340px;
+    background-color: #59D5E0;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px ; /* Adjust margins */
+  }
+  
+  td {
+    padding: 15px;
+  }
+  
+  button {
+    font-size: 20px;
+    width: 185px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #DDD;
+    color: #000;
+  }
+  
