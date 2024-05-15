@@ -54,7 +54,7 @@ User Management
 Staff Management
 ![Staff Management](https://github.com/YashRohan07/Web-Development-Project/assets/111037103/e22cbe4a-4da0-41e3-a6be-9e5ba28f31ba)
 
-Book Management
+Booking Management
 ![Booking Management](https://github.com/YashRohan07/Web-Development-Project/assets/111037103/09cb2a85-2936-40ac-8601-55313c7e3246)
 
 Services
