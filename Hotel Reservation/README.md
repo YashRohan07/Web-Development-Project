@@ -1,8 +1,6 @@
 Hotel Reservation Website using HTML, CSS, Javascript, PHP, MySQL, Ajax, Jason....
 
 
-#Screenshots....
-
 Dashboard
 ![Dashboard](https://github.com/YashRohan07/Web-Development-Project/assets/111037103/d5e48d13-d2b2-4d23-8ade-d7b6ae5dff5e)
 
